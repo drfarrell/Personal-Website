@@ -1,8 +1,15 @@
+html {
+  font-family: 'Catamaran', sans-serif;
+
+
+}
+
+
 h1 {
   font-size: 5em;
   text-align: center;
   font-weight: 800;
-  letter-spacing: 1.3em;
+  letter-spacing: 2px;
 }
 
 p {
