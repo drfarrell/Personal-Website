@@ -1,29 +1,26 @@
 html {
    font-family: 'museo-sans', sans-serif;
-   color: #666666;
+   color: #34495e;
 }
 
 body {
-  background: #ecf0f1 ;
+  background: #fefefe ;
 }
 
 
 h1 {
-  font-size: 500% ;
+  font-size: 8.5em ;
   text-align: left;
   font-weight: 900;
-  letter-spacing: inherit;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
-header {
+h2 {
+}
+
+.header {
   text-align: justify;
-  width: 100%;
-  display: table;
-  margin: 0;
-  max-width: none;
-  height: 100vh;
-  vertical-align: middle;
 }
 
 header:after {
@@ -32,12 +29,24 @@ header:after {
   width: 100%;
 }
 
+.hr {
+  height: 2px;
+  background-color: #34495e;
+  margin-top: 20px;
+}
+
+.label {
+  background: #666666;
+  text-transform: uppercase;
+  padding: 5px;
+  color: #ffffff;
+  border-radius: 3px;
+  font-size: 1.1em;
+}
+
 p {
   font-size: 1em;
   font-weight: 400;
 }
 
-.hr {
-  height: 2px;
-  background-color: #34495e;
-}
+
