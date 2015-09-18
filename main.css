@@ -1,17 +1,43 @@
 html {
-   font-family: "museo-sans";
+   font-family: 'museo-sans', sans-serif;
+   color: #666666;
+}
+
+body {
+  background: #ecf0f1 ;
 }
 
 
 h1 {
-  font-size: 11.2em;
-  text-align: center;
+  font-size: 500% ;
+  text-align: left;
   font-weight: 900;
-  letter-spacing: 2px;
+  letter-spacing: inherit;
   text-transform: uppercase;
+}
+
+header {
+  text-align: justify;
+  width: 100%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  height: 100vh;
+  vertical-align: middle;
+}
+
+header:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
 }
 
 p {
   font-size: 1em;
   font-weight: 400;
+}
+
+.hr {
+  height: 2px;
+  background-color: #34495e;
 }
