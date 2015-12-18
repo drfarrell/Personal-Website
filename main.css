@@ -1,22 +1,22 @@
 html {
-   font-family: 'museo-sans', sans-serif;
-   color: #34495e;
+ font-family: "open-sans",sans-serif;
 }
 
 body {
-  background: #fefefe ;
+  background: #EEEEEE ;
 }
 
 
 h1 {
   font-size: 8.5em ;
-  text-align: left;
+  text-align: center;
   font-weight: 900;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 h3 {
+  font-weight: 900;
 }
 
 .header {
@@ -24,29 +24,24 @@ h3 {
 }
 
 header:after {
-  content: "";
   display: inline-block;
   width: 100%;
 }
 
 .hr {
   height: 2px;
-  background-color: #34495e;
-  margin-top: 20px;
+  background-color: #e67e22;
 }
 
 .subtitle {
-  background: #666666;
   text-transform: uppercase;
-  padding: 5px;
-  color: #ffffff;
-  border-radius: 3px;
-  font-size: 1.1em;
-  character: 2px;
-  weight: 500;
+  color: #444444;
+  font-size: 0.9em;
+  letter-spacing: 3px;
 }
 
 p {
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 300;
+  font-family: "calluna",serif;
 }
