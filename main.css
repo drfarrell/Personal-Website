@@ -16,7 +16,7 @@ h1 {
   text-transform: uppercase;
 }
 
-h2 {
+h3 {
 }
 
 .header {
@@ -35,18 +35,18 @@ header:after {
   margin-top: 20px;
 }
 
-.label {
+.subtitle {
   background: #666666;
   text-transform: uppercase;
   padding: 5px;
   color: #ffffff;
   border-radius: 3px;
   font-size: 1.1em;
+  character: 2px;
+  weight: 500;
 }
 
 p {
   font-size: 1em;
   font-weight: 400;
 }
-
-
