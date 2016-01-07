@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background: #FFFFFF2 ;
+  background: #FFFFFF ;
 }
 
 /* Fonts */
@@ -25,9 +25,9 @@ h2 {
 
 
 h3 {
-  font-weight: 900;
+  font-weight: 200;
   margin-bottom: 5px;
-  font-size: 1.2em;
+  font-size: 1.4em;
   letter-spacing: 1px;
 
 }
@@ -38,17 +38,10 @@ header p {
   font-size: 0.8em;
 }
 
-navbar {
-  display: inline-block;
-}
-
-.container {
-
-}
-
-#Main {
+header {
   padding: 0% 20% 0 20%;
 }
+
 
 .header {
   text-align: justify;
@@ -60,8 +53,9 @@ header:after {
 }
 
 .hr {
-  height: 2px;
+  height: 1.2px;
   background-color: #e67e22;
+  opacity: 0.5;
 }
 
 .subtitle {
@@ -78,18 +72,29 @@ p {
 }
 
 ul {
-  text-decoration: none;
-}
-.col-md-6{
-
+  list-style-type: none;
 }
 
-@media screen and (max-width: 480px) {
+.col-md-6 {
+  display: inline;
+}
+
+.navbar-nav{
+        float:none;
+        margin: 0 auto;
+        display: inline;
+}
+
+.Main-container {
+  padding: 0% 20% 0% 20%;
+}
+
+@media (max-width: 480px) {
   h1 {
     font-size: 1.2em;
   }
 
-  #Main {
+  .Main-container {
     padding: 0% 0% 0% 0%;
   }
 }
