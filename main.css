@@ -4,25 +4,50 @@ html {
 }
 
 body {
-  background: #EEEEEE ;
+  background: #FFFFFF2 ;
 }
 
-
+/* Fonts */
 h1 {
-  font-size: 6.5em ;
+  font-size: 1.6em ;
   text-align: center;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
+  margin-top: 40px;
 }
 
-.container {
-  padding: 0% 20% 0 20%;
+h2 {
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-bottom: 30px;
 }
+
 
 h3 {
   font-weight: 900;
   margin-bottom: 5px;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+
+}
+
+header p {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+navbar {
+  display: inline-block;
+}
+
+.container {
+
+}
+
+#Main {
+  padding: 0% 20% 0 20%;
 }
 
 .header {
@@ -52,12 +77,27 @@ p {
   font-family: "calluna",serif;
 }
 
+ul {
+  text-decoration: none;
+}
+.col-md-6{
+
+}
+
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 3.4em;
+    font-size: 1.2em;
   }
 
-  .container {
+  #Main {
     padding: 0% 0% 0% 0%;
   }
+}
+@media (min-width: 768px){
+    .navbar-nav{
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+    }
 }
