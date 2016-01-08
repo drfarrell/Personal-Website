@@ -1,6 +1,6 @@
 html {
  font-family: "open-sans",sans-serif;
-  color: #444444;
+ color: #444444;
 }
 
 body {
@@ -9,39 +9,93 @@ body {
 
 /* Fonts */
 h1 {
-  font-size: 1.6em ;
+  font-size: 1.8em ;
   text-align: center;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 200;
   font-size: 1.2em;
   margin-bottom: 30px;
 }
 
 
 h3 {
-  font-weight: 200;
-  margin-bottom: 5px;
-  font-size: 1.4em;
-  letter-spacing: 1px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  font-size: 1.7em;
+  letter-spacing: 0.8px;
+  font-family: "acta-display", sans-serif;
+  position: relative;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 4.0em;
+  font-weight: 100;
+  display:inline;
+  opacity: 0.1;
+}
+
+img {
+  position: relative;
+  width: 100%;
+  padding-top: 30px;
 
 }
 
+p {
+  font-size: 0.84em;
+  font-weight: 500;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.subtitle {
+   position: absolute;
+   top: -15px;
+   left: -20%;
+   bottom: 0;
+   right: 0;
+   z-index: -1;
+   /*overflow: hidden;*/
+}
+
+a {
+  color: #e67e22;
+  opacity: 1;
+  text-decoration: none;
+  font-weight: 600;
+
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+#background {
+  position: relative;
+  opacity: 0.5;
+}
+
 header p {
-  font-weight: 800;
   text-transform: uppercase;
   font-size: 0.8em;
 }
 
 header {
-  padding: 0% 20% 0 20%;
 }
 
+.table {
+  display: table;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 50px 10px;
+}
 
 .header {
   text-align: justify;
@@ -53,7 +107,7 @@ header:after {
 }
 
 .hr {
-  height: 1.2px;
+  height: 1.0px;
   background-color: #e67e22;
   opacity: 0.5;
 }
@@ -65,18 +119,21 @@ header:after {
   letter-spacing: 3px;
 }
 
-p {
-  font-size: 1.03em;
-  font-weight: 300;
-  font-family: "calluna",serif;
-}
 
-ul {
+
+li {
   list-style-type: none;
+  display: inline-block;
+  margin: 0 10px 0px 10px;
+  font-weight: 600;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  -webkit-transition: color 0.5s
 }
 
-.col-md-6 {
-  display: inline;
+li:hover{
+  color: #e67e22;
+   -webkit-transition: color 0.2s;
 }
 
 .navbar-nav{
@@ -98,7 +155,7 @@ ul {
     padding: 0% 0% 0% 0%;
   }
 }
-@media (min-width: 768px){
+/*@media (min-width: 768px){
     .navbar-nav{
         float:none;
         margin: 0 auto;
@@ -106,3 +163,4 @@ ul {
         table-layout: fixed;
     }
 }
+*/
