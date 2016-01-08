@@ -26,7 +26,7 @@ h2 {
 
 h3 {
   font-weight: 800;
-  margin-bottom: 8px;
+  margin-bottom: 40px;
   font-size: 1.7em;
   letter-spacing: 0.8px;
   font-family: "acta-display", sans-serif;
@@ -39,6 +39,7 @@ h4 {
   font-weight: 100;
   display:inline;
   opacity: 0.1;
+
 }
 
 img {
@@ -51,7 +52,7 @@ img {
 p {
   font-size: 0.84em;
   font-weight: 500;
-  padding-top: 20px;
+  padding-top: 0px;
   padding-bottom: 40px;
 }
 
@@ -66,16 +67,13 @@ p {
 }
 
 a {
-  color: #e67e22;
+  color: #444444;
   opacity: 1;
   text-decoration: none;
   font-weight: 600;
-
+    -webkit-transition: color 0.5s
 }
 
-a:hover {
-  opacity: 0.5;
-}
 
 #background {
   position: relative;
@@ -87,14 +85,14 @@ header p {
   font-size: 0.8em;
 }
 
-header {
+
+.navbar {
+  padding-top: 20px;
+  font-size: 1.1em;
 }
 
-.table {
-  display: table;
-  margin: 0 auto;
-  border-collapse: separate;
-  border-spacing: 50px 10px;
+.navbar a {
+  text-decoration: none;
 }
 
 .header {
@@ -119,8 +117,6 @@ header:after {
   letter-spacing: 3px;
 }
 
-
-
 li {
   list-style-type: none;
   display: inline-block;
@@ -128,10 +124,10 @@ li {
   font-weight: 600;
   font-size: 0.8em;
   text-transform: uppercase;
-  -webkit-transition: color 0.5s
+
 }
 
-li:hover{
+a:hover{
   color: #e67e22;
    -webkit-transition: color 0.2s;
 }
@@ -144,7 +140,9 @@ li:hover{
 
 .Main-container {
   padding: 0% 20% 0% 20%;
+  text-align: left;
 }
+
 
 @media (max-width: 480px) {
   h1 {
