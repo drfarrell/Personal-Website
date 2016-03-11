@@ -1,122 +1,109 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://use.typekit.net/ywl0qlq.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
-<title>Daniel R Farrell</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="icon" href="/images/favicon.png" type="image/png">
-  <link href="https://fontastic.s3.amazonaws.com/veV2f7WhemHLpZQ2uqiVmm/icons.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="main.css">
-
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:200,700|PT+Serif' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Daniel R Farrell</title>
 </head>
-
-
 <body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <div class="Main-container">
-    <header>
-      <h1>Daniel R Farrell</h1>
-      <div class="hr"></div>
-      <nav class="navbar text-center">
-           <li><a href="#">01. About </a></li>
-           <li><a href="#">02. Capabilities </a></li>
-           <li><a href="#">03. Social </a></li>
-           <li><a href="#">04. Contact </a></li>
-      </nav>
-
-    </header>
-    <div class="hr"></div>
-    <img src="https://media.licdn.com/media//AAEAAQAAAAAAAAR7AAAAJGRiMDZkMGFmLTllMzQtNDFkNS04NzZmLWM2YWM0OTg3YzU3OQ.jpg">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4 pull-left">
-          <h3>About</h3>
-          <p>This is my Landing Page. Unfortunately, you're a little early... It's currently under construction. <br> <br>
-       Patience is a virtue. <br></p>
-        </div>
-        <div class="col-md-4 pull-right">
-          <h3>Capabilities</h3>
-          <p>Apparently none at the moment. Currently working on that...</p>
-        </div>
-      </div>
-    </div>
-
-    <!--
-    <div class="subtitle">
-
-    </div>
-    <h3>Capabilities</h3>
-      <div class="container">
-       <div class="row">
-         <div class="col-md-6 pull-right">
-            <p> Send me a message at [temporarily redacted]</p>
-         </div>
-         <div class="col-md-6 pull-right">
-            <h2>Email</h2>
-            <p>Setup columns in bootstrap, add info bar at top. See reference in FreshJets favorites folder. </p>
-         </div>
-        </div>
-      </div>
-    <h3>SOCIAL</h3>
-      <div class="container">
-       <div class="row">
-         <div class="col-md-6">
-            <p>Thoughts less than or equal to 140 characters: <a href="https://twitter.com/D_R_Farrell">Twitter</a><br>Questions and answers: <a href="https://www.quora.com/profile/Daniel-R-Farrell">Quora</a><br> Sampling of my Design Portfolio: <a href="https://www.behance.net/D_R_Farrell">Behance</a><p>
-         </div>
-         <div class="col-md-6 pull-right">
-
-         </div>
-        </div>
-      </div>
-          <h3>CONTACT</h3>
-            <div class="container">
-       <div class="row">
-         <div class="col-md-6">
-            <p> Send me a message at [temporarily redacted]</p>
-         </div>
-         <div class="col-md-6 pull-right">
-
-         </div>
-        </div>
-      </div>
-    -->
+  <header>    
+  <nav class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+        <ul class="nav navbar-nav navbar-left pull-left">
+      <li><a href="#about"><strong>Daniel R Farrell</strong></a></li>
+    </ul>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar" id="gone"></span>
+      <span class="icon-bar"></span>
+    </button>    
   </div>
-
-
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#Home">Portfolio</a></li>
+      <li><a href="http://drfarrell.github.io/Resume/">About</a></li>
+      <li><a href="#Contact">Contact</a></li>
+      <li><a href="https://soundcloud.com/dfaro">Audio</a></li>
+    </ul>
+  </div>
+</nav>
+  </header>
+  <div class="jumbotron">
+    <div class="descriptor">
+      <h1>Daniel R Farrell</h1>
+      <h2>I'm a Mechanical Engineering student at the University of Denver, and I'm passionate about Entrepreneurship, Tech, Electronic Music, and Typography.</h2>
+    </div>
+  </div>
+  <div class="portfolio">
+    <div class="container">
+    <!-- HEX GRID -->
+      <ul id="hexGrid">
+        <li class="hex">
+          <a class="hexIn" href="https://www.behance.net/gallery/33993406/Airbnb-Experiences-Redesign">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/202/f333e933993406.Y3JvcCw3NDksNTg1LDIyLDA.jpg" alt="Airbnb Experiences" />
+          </a>
+        </li>
+        <li class="hex">
+          <a class="hexIn" href="https://www.behance.net/gallery/34233443/UberMTN-Concept-Overview">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/202/8d606334233443.Y3JvcCw3MTEsNTU2LDQ3LDA.png" alt="UberMTN" />
+          </a>
+        </li>
+        <li class="hex">
+          <a class="hexIn" href="https://www.behance.net/gallery/32264955/FreshJets-Branding-Sample">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/202/59483332264955.Y3JvcCwxMDQ1LDgxNyw2MCw0MA.png" alt="FreshJets" />
+          </a>
+        </li>
+        <li class="hex">
+          <a class="hexIn" href="https://www.behance.net/gallery/28076615/smOS-Get-Connected-(St-Marys-Yearbook-2014)">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/202/d274ec28076615.55b03cff7b9ff.png" alt="smOS Get Connected" />
+          </a>
+        </li>
+        <li class="hex">
+          <a class="hexIn" href="https://www.behance.net/gallery/33532409/Robinhood-Leaflets">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/202/3d3b4433532409.Y3JvcCwyMjM1LDE3NDgsNTE0LDE1NA.jpg" alt="Robinhood Leaflets" />
+          </a>
+        </li>
+        <li class="hex">
+          <a class="hexIn" href="https://www.behance.net/gallery/32266171/Wthout-Landing-Page">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/202/84ebe032266171.Y3JvcCw3ODAsNjEwLDE4MSwzNA.png" alt="Wthout Landing Page" />
+          </a>
+        </li>
+        <li class="hex">
+          <a class="hexIn" href="https://www.behance.net/gallery/27899577/QRAK-Phase-2-Pitch-Deck">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/202/3a527227899577.55a456d6ee6b1.png" alt="QRAK" />
+          </a>
+        </li>
+        <li class="hex">
+          <a class="hexIn" href="https://www.behance.net/gallery/27926771/Identity-Guidelines-for-Dynamize-Revised">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/202/532f7927926771.55a5822b0f21f.png" alt="Dynamize Branding" />
+          </a>
+        </li>
+        <li class="hex">
+          <a class="hexIn" href="https://www.behance.net/gallery/27900559/Freshman-Senator-Campaign-Flyers">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/09037827900559.5636c75404728.JPG" alt="Campaign Flyers" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <footer>
+      <div class="row">
+        <div class="container">
+          <div class="col-lg-6">
+            <p>Copyright 2016 · Handcoded in Colorado
+          </div>
+          <div class="col-lg-6" id="social">
+            <a href="https://twitter.com/D_R_Farrell">Twitter </a>
+            <a href="https://www.linkedin.com/in/danielrfarrell">LinkedIn </a>
+            <a href="https://www.quora.com/profile/Daniel-R-Farrell">Quora </a>
+            <a href="https://soundcloud.com/dfaro">Soundcloud </a>
+            <a href="https://www.behance.net/D_R_Farrell">Behance </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
-
-
-<!--
-<div class="col-md-6">
-  <div id="background">
-    <div class="subtitle">
-      <h4>01</h4>
-    <div class="hr"></div>
-    </div>
-  </div>
-<h3>About</h3>
-  <div class="copy">
-    <p>This is my Landing Page. Unfortunately, you're a little early... It's currently under construction. <br> <br>
-       Patience is a virtue. <br></p>
-  </div>
-</div>
-<div class="col-md-6 pull-right" display="inline-block">
-  <div id="background">
-    <div class="subtitle">
-      <h4>01</h4>
-    <div class="hr"></div>
-    </div>
-  </div>
-<h3>About</h3>
-<div class="copy">
-  <p>This is my Landing Page. Unfortunately, you're a little early... It's currently under construction. <br> <br>
-     Patience is a virtue. <br></p>
-</div>
-
-</div>
--->
