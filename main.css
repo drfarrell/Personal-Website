@@ -3,20 +3,14 @@ html, body {
     overflow-x: hidden;
 }
 
-body {
-background: rgba(255,255,255,1);
-background: -moz-linear-gradient(110deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(230,230,230,1) 47%, rgba(255,255,255,1) 61%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
-background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(255,255,255,1)), color-stop(47%, rgba(238,238,238,1)), color-stop(61%, rgba(255,255,255,1)), color-stop(69%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
-background: -webkit-linear-gradient(110deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(238,238,238,1) 47%, rgba(255,255,255,1) 61%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
-background: -o-linear-gradient(110deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(238,238,238,1) 47%, rgba(255,255,255,1) 61%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
-background: -ms-linear-gradient(110deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(238,238,238,1) 47%, rgba(255,255,255,1) 61%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
-background: linear-gradient(110deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(244,244,244,1) 47%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 55%, rgba(255,255,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
-}
-
 * {
     margin: 0;
     padding: 0;
+}
+
+.hover {
+-webkit-user-select: none;
+-webkit-touch-callout: none;        
 }
 
 /*------------------------------------------Fonts---*/
@@ -25,6 +19,16 @@ body {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: regular; 
   color: #515357;
+  
+    /*-Gradient-*/
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(110deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(230,230,230,1) 47%, rgba(255,255,255,1) 61%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(255,255,255,1)), color-stop(47%, rgba(238,238,238,1)), color-stop(61%, rgba(255,255,255,1)), color-stop(69%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(110deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(238,238,238,1) 47%, rgba(255,255,255,1) 61%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(110deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(238,238,238,1) 47%, rgba(255,255,255,1) 61%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(110deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(238,238,238,1) 47%, rgba(255,255,255,1) 61%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(110deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 45%, rgba(240,240,240,1) 45%, rgba(255,255,255,1) 65%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
 }
 
 h1 {
@@ -34,31 +38,47 @@ h1 {
 
 h2 {
   /*font-family: 'PT Serif', serif;*/
-  font-weight: 200;
+  font-weight: 300;
   line-height: 120%;
   font-size: 2em;
 }
 
 h3 {
-  text-align: center;
-  font-weight: 600;
-  font-size: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+h4 {
+  font-size: 0.9em;
+  color: #8B8B8B;
 }
 
 p {
   color: #8B8B8B;
+  font-family: 'PT Serif', serif;
+  font-size: 1.2em;
 }
 
 a {
   text-decoration: none;
-  color: grey;
+  color: #3B3B3B;
   -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration:none;
   color: #515357;
-   -webkit-transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+a:hover_effect {
+  text-decoration:none;
+  color: #515357;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
 
 /*------------------------------------------Navbar---*/
@@ -66,8 +86,13 @@ a:hover {
 .navbar-default .navbar-nav > li > a {
   color: white; 
 }
+
 .navbar-default .navbar-nav > li > a:hover {
-  color: #FFB400; 
+  color: #515357;
+}
+
+.navbar-default .navbar-nav > li > a:hover_effect {
+  color: #515357;
 }
 
 .navbar {
@@ -77,12 +102,14 @@ a:hover {
   position: fixed;
   z-index: 100;
   width: 100%;
-  padding-right: 9%;
-  padding-left:10%;
 }
 
-.navbar-brand
-{
+.navbar .container{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.navbar-brand {
   position: absolute;
   width: 100%;
   left: 0;
@@ -90,7 +117,12 @@ a:hover {
   margin: auto;
 }
 
-ul {
+button {
+  position: relative;
+  top: 3px;
+}
+
+header ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -98,14 +130,14 @@ ul {
   font-size: 1.05em;
 }
 
-li {
+header li {
   float: right;
+  display: inline;
 }
 
 #gone {
   opacity: 0;
 }
-
 
 /*------------------------------------------Jumbotron---*/
 .jumbotron {
@@ -114,57 +146,14 @@ li {
 }
 
 .descriptor {
-  padding-left: 5%;
-  padding-right: 20%;
+  padding-left: 0%;
+  padding-right: 32%;
   padding-top: 10%;
   padding-bottom: 10%;
 }
 
+/*------------------------------------------Project---*/
 
-/*------------------------------------------Portfolio---*/
-
-img {
-  position: relative;
-  margin: 0 auto;
-  width: 100%;
-  -webkit-filter: grayscale(90%); /* Chrome, Safari, Opera */
-  filter: grayscale(90%);
-  -webkit-transition: -webkit-filter 0.2s;
-}
-
-.card:hover img {
-  opacity: 1;
-  -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
-  filter: grayscale(0%);
-  -webkit-transition: -webkit-filter 0.2s;
-}
-
-.portfolio {
-    margin: 10%;
-}
-
-.card {
-  padding: 20px;
-  margin: 15px 0 15px 0;
-  border: 1px solid #ccc;
-  -webkit-transition: box-shadow 0.5s;
-  size: 40%;
-  background-color: white;
-  border-radius: 4px;
-}
-
-.card:hover {
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
-  -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
-  -webkit-transition: box-shadow 0.2s;
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 
 /*------------------------------------------HEXCODE---*/
@@ -206,10 +195,11 @@ img {
 
 /*** HEX CONTENT **********************************************************************/
 .hex img {
-    left: -100%;
+  left: -100%;
   right: -100%;
   width: auto;
-  height: 100%;
+  height: 120%;
+  bottom: -10%;
   margin: 0 auto;
   -webkit-filter: grayscale(90%); /* Chrome, Safari, Opera */
   filter: grayscale(90%);
@@ -369,21 +359,70 @@ img {
 }
 
 
+/*-----------------------------Project Navigation---*/
+
+
+
 /*------------------------------------------Footer---*/
 footer {
   background-color: none; 
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
 
 #social {
   float: right;
 }
 
+@media(max-width: 991px){
+ 
+  .navbar .container {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  
+  .decor {
+    position: relative;
+    top: 120px !important;
+  }
+  
+  .decor p {
+    height: 190px;
+    line-height: 20px;
+    position: relative;
+    top: -260px;
+  }
+  
+  iframe {
+  width: 100%; 
+  height: 420px;;
+  }
+  
+}
+
+@media(max-width: 767px){
+ 
+  .navbar .container {
+    padding-right: 15px !important;
+    padding-left: 35px !important;
+  }
+  
+  .commentary {
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  }
+  
+
+
+}
+
 @media(max-width: 720px){
+ 
   h1 {
     font-weight: 700;
-    font-size: 3.8em;
+    font-size: 3.2em;
   }
 
   h2 {
@@ -392,20 +431,34 @@ footer {
     font-size: 1.7em;
   }
   
-  .navbar {
-    padding-right: 0%;
-    padding-left: 5%;
+  .navbar .container{
+    padding-right: 15px;
+    padding-left: 33px;
   }
   
-  
-  /*------------------------------------------Portfolio---*/
-  .portfolio {
+  .project .container{
     margin: 1%;
   }
   
   .jumbotron {
-    padding: 15% 0px 0px 0px;
-    background: none;
+    padding: 15% 0px 10% 0px;
+  }
+  
+  .decor {
+    position: relative;
+    top: 120px !important;
+  }
+  
+  .decor p {
+    height: 190px;
+    line-height: 20px;
+    position: relative;
+    top: -260px;
+  }
+  
+  .overview {
+  margin-bottom: -140px;
+  margin-top: 20px;
   }
   
   .descriptor {
@@ -413,16 +466,61 @@ footer {
     padding-bottom: 10%;
   }
 
-  #social {
-    float: left;
+  iframe {
+  width: 100%; 
+  height: 390px;;
   }
+  
+}
+
+@media(max-width: 662px){
+  
+  .decor p {
+    top: -200px !important;
+    font-size: 10em !important;
+  }
+   
+  .commentary {
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+ }
 
 }
 
 
-/*--Thanks to Ben Johnson---*/
-
-
-
-
-
+@media(max-width: 412px){
+  
+  .decor p {
+    font-size: 8em !important;
+    top: -280px !important;
+  }
+   
+  #quote h2 {
+    font-size: 2.0em;
+  }
+  
+  #quote {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  img {
+    width: 100%;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .commentary {
+  padding-left: 0%;
+  padding-right: 0%;
+  }
+  
+  iframe {
+  width: 100%; 
+  height: 230px;;
+  }
+  
+}
