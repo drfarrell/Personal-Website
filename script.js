@@ -1,3 +1,25 @@
+//3D positioning
+
+window.addEventListener('mousemove', function(e){
+	
+	var hscreen 		= window.innerHeight;
+	var wscreen 		= window.innerWidth;
+	var posY 			= (e.pageY / hscreen * 100) - 50;
+	var posX  			= (e.pageX / wscreen * 100) - 50;
+    var translateY 	= posY / 6;
+	var translateX 	= posX / 6;
+	var rotateX 		= posX / 6;
+	var rotateY 		= posY / 6;
+	var header			= document.querySelector('.transform3d');
+	var title			= document.querySelector('.title');
+	var titleDist   = title.getAttribute('data-distance');
+	
+	title.style.transform = 'translate(' + translateX*titleDist + 'px,' + translateY*titleDist + 'px) rotateX(' + rotateX/titleDist + 'deg) rotateY(' + rotateY/titleDist + 'deg)';
+	title.style.textShadow = '' + (translateX*2)+ 'px ' + (translateY*2) + 'px' + ' 100px rgba(0,0,0,0.2)';
+	
+}, false);
+
+
 $('body').bind('touchstart', function() {});
 
 $(document).ready(function() {
@@ -15,13 +37,3 @@ window.location = newLocation;
 }
 
 });
-
-/*  Mobile "hover"  */
-$(document).ready(function() {
-    $('.hover').bind('touchstart touchend', function(e) {
-        e.preventDefault();
-        $(this).toggleClass('hover_effect');
-    });
-});
-
-
