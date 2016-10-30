@@ -211,9 +211,10 @@ header li {
 .transform3d {
   transform-style: preserve-3d;
   margin: auto;
-  transform: perspective(800px);
+  transform: perspective(1800px);
   text-align: center;
   align-items: center;
+  z-index: -20;
 }
 
 
