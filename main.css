@@ -44,7 +44,7 @@ h2 {
 
 h3 {
   text-align: center;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 3em;
   padding-top: 30px;
 }
@@ -145,16 +145,30 @@ header li {
 
 /*------------------------------------------Jumbotron---*/
 .jumbotron {
-  padding: 100px;
+  padding: 50px;
   background: none;
-  height: 90vh;
+  /*height: 140px;*/
+  margin-bottom: -50px;
 }
 
 .descriptor {
   padding-left: 5%;
   padding-right: 10%;
-  padding-top: 5%;
-  padding-bottom: 10%;
+  padding-top: 8%;
+  padding-bottom: 0%;
+
+}
+
+.discriptor .intro {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+
+.discriptor .back {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
 }
 
 #hi {
@@ -169,7 +183,7 @@ header li {
   position: relative;
   float: left;
   top: 375px;
-  z-index: 88888;
+  z-index: 99999;
 }
 
 .backtext {
@@ -215,6 +229,11 @@ header li {
   text-align: center;
   align-items: center;
   z-index: -20;
+}
+
+
+.work {
+  margin-top: -0px;
 }
 
 
@@ -333,9 +352,9 @@ footer {
   
   
   .jumbotron {
-    padding: 100px;
+    padding: 50px;
     background: none;
-    height: 65vh;
+    height: 510px;
   }
 
   
@@ -346,6 +365,7 @@ footer {
   
   h2 {
     line-height: 120%;
+    font-size: 15.0vw !important;
     font-size: 8.5em;
   }
   
@@ -374,11 +394,6 @@ footer {
 }
 
 @media(max-width: 921px){
-
-    .backtext {
-    top: -300px;
-  }
-  
   
   .first {
     left: 0%;
@@ -403,12 +418,14 @@ footer {
   
 }
 
-@media(max-width: 767px){
 
 
+
+@media(max-width: 825px){
 
   .backtext {
-    top: -300px;
+    top: -280px;
+    position: relative;
   }
   
 }
@@ -421,97 +438,106 @@ footer {
     font-size: 3.8em;
   }
   
+  h2 {
+    line-height: 120%;
+    font-size: 15.0vw !important;
+    font-size: 8.5em;
+  }
+  
   .navbar {
     padding-right: 0%;
     padding-left: 5%;
   }
+  
+  .second {
+    position: relative;
+    left: -40px;
+    text-align: center;
+    margin: 0 auto !important;
+  }
+  
+  
   /*------------------------------------------Portfolio---*/
-  
-  .jumbotron {
-    padding: 15% 0px 0px 0px;
-    background: none;
-  }
+
+
 }
 
 
-@media(max-width: 540px){
 
-
-  h2 {
-    font-size: 6.5em !important;
-    line-height: 150%;
-  }
-  
-}
-
-  .overview {
-    margin-top: 20px;
-  }
-
-@media(max-width: 420px){
-
+@media(max-width: 645px){
+ 
   .jumbotron {
-    height: 70vh;
+    height: -15%;
   }
   
   h1 {
     font-size: 4em !important;
   }
-  
+
   h2 {
-    font-size: 4.5em !important;
-    line-height: 150%;
-    text-shadow: 0px 0px 100px rgba(0,0,0,0.45);
-  }
+    line-height: 120%;
   
-  #daniel {
-    top: 70px;
-  } 
+  }
   
   .descriptor {
     padding-left: 0%;
     padding-right: 0%;
-    padding-top: 0%;
-    padding-bottom: 20%;
-
+    padding-top: 8%;
+    padding-bottom: 0%;
   }
   
   .backtext {
-    top: -230px;
+    padding-top: 20%;
+  }
+}
+
+
+@media(max-width: 420px){
+
+
+  
+  #daniel {
+    top: 70px;
+  }
+  
+ 
+  
+  .backtext {
+    top: -300px;
   }
   
   .overview {
     margin: -30px;
-    padding-top: 30px;
+    padding-top: 0px;
   }
   
 }
 
-@media(max-width: 290px){
+@media(max-width: 380px){
 
   h1 {
-    font-size: 3em !important;
+    font-size: 3.0em !important;
+    line-height: 40px;
+    margin-left: -20%;
+    margin-right: -20%;
   }
   
   h2 {
-    font-size: 4.5em !important;
-    line-height: 200%;
-  }
-   
-  .descriptor {
-    padding-left: 0%;
-    padding-right: 0%;
-    padding-top: 0%;
-    padding-bottom: 0%;
-    top: -200px;
+    line-height: 140%;
+    font-size: 25.0vw !important;
+    font-size: 8.5em;
+    margin-top: 00px;
   }
   
   .backtext {
     top: -250px;
+    left: -50px;
   }
   
   .overview {
-    margin: -35px;
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-top: -180px;
   }
   
 }
