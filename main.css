@@ -183,7 +183,7 @@ header li {
   position: relative;
   float: left;
   top: 375px;
-  z-index: 99999;
+  z-index: 90000;
 }
 
 .backtext {
@@ -335,6 +335,16 @@ header li {
   transform: scale(1.02,1.02); /* Standard syntax */
 }
 
+
+.nope:hover {
+    -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -ms-transform: scale(0.99,0.99); /* IE 9 */
+  -webkit-transform: scale(0.99,0.99); /* Safari */
+  transform: scale(0.99,0.99); /* Standard syntax */
+}
 
 
 /*------------------------------------------Footer---*/
