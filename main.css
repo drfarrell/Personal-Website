@@ -148,15 +148,14 @@ header li {
   padding: 50px;
   background: none;
   /*height: 140px;*/
-  margin-bottom: -50px;
+  margin-bottom: -150px;
 }
 
 .descriptor {
   padding-left: 5%;
   padding-right: 10%;
-  padding-top: 8%;
+  padding-top: 6%;
   padding-bottom: 0%;
-
 }
 
 .discriptor .intro {
@@ -233,7 +232,7 @@ header li {
 
 
 .work {
-  margin-top: -0px;
+  margin-top: 0px;
 }
 
 
@@ -318,6 +317,7 @@ header li {
   -ms-transform: scale(1.0,1.0); /* IE 9 */
   -webkit-transform: scale(1.0,1.0); /* Safari */
   transform: scale(1.0,1.0); /* Standard syntax */
+  opacity: 1.0;
 }
 
 
@@ -344,6 +344,7 @@ header li {
   -ms-transform: scale(0.99,0.99); /* IE 9 */
   -webkit-transform: scale(0.99,0.99); /* Safari */
   transform: scale(0.99,0.99); /* Standard syntax */
+  opacity: 0.35;
 }
 
 
@@ -364,7 +365,7 @@ footer {
   .jumbotron {
     padding: 50px;
     background: none;
-    height: 510px;
+    height: 550px;
   }
 
   
@@ -415,7 +416,7 @@ footer {
     position: relative;
     top: -15px;
     margin-left: -50%;
-    margin-right: -50%;
+    margin-right: -60%;
     text-align: center;
     margin: 0 auto !important;
   }
@@ -436,6 +437,11 @@ footer {
   .backtext {
     top: -280px;
     position: relative;
+  }
+  
+  .descriptor {
+  padding-top: 2%;
+  padding-bottom: 0%;
   }
   
 }
@@ -465,9 +471,8 @@ footer {
     text-align: center;
     margin: 0 auto !important;
   }
+
   
-  
-  /*------------------------------------------Portfolio---*/
 
 
 }
@@ -492,12 +497,26 @@ footer {
   .descriptor {
     padding-left: 0%;
     padding-right: 0%;
-    padding-top: 8%;
+    padding-top: 10%;
     padding-bottom: 0%;
   }
   
   .backtext {
     padding-top: 20%;
+  }
+}
+
+
+
+@media(max-width: 600px){
+    
+  .descriptor {
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+
+  .backtext {
+    padding-top: 15%;
   }
 }
 
@@ -513,7 +532,7 @@ footer {
  
   
   .backtext {
-    top: -300px;
+    padding-top: 25%;
   }
   
   .overview {
@@ -523,11 +542,11 @@ footer {
   
 }
 
-@media(max-width: 380px){
+@media(max-width: 390px){
 
   h1 {
     font-size: 3.0em !important;
-    line-height: 40px;
+    line-height: 50px;
     margin-left: -20%;
     margin-right: -20%;
   }
@@ -536,11 +555,13 @@ footer {
     line-height: 140%;
     font-size: 25.0vw !important;
     font-size: 8.5em;
-    margin-top: 00px;
+    margin-top: 10px;
+    margin-left: 4%;
+    width: 150%;
   }
   
   .backtext {
-    top: -250px;
+    top: -140px;
     left: -50px;
   }
   
