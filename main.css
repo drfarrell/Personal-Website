@@ -240,7 +240,6 @@ header li {
 
 /*------------------------------------------Portfolio---*/
 
-
 #gofire {
   background-image: url("https://cloud.githubusercontent.com/assets/14104075/19628117/a427185a-9913-11e6-9fd5-af5a1551f9fa.png");
   background-repeat: no-repeat;
@@ -269,8 +268,8 @@ header li {
   background-size: cover;
 }
 
-#intrn {
-  background-image: url("https://cloud.githubusercontent.com/assets/14104075/19628122/ac01d6f0-9913-11e6-99ac-80873f3a7660.png");
+#ux {
+  background-image: url("https://cloud.githubusercontent.com/assets/14104075/21958055/c43261ce-da61-11e6-9c1e-02b0ed4452af.png");
   background-repeat: no-repeat;
   background-position: center 0%; 
   background-size: cover;
@@ -298,12 +297,11 @@ header li {
 }
 
 #wanderlift {
-  background-image: url("https://cloud.githubusercontent.com/assets/14104075/19628113/a421105e-9913-11e6-9199-804ad84eafdf.png");
+  background-image: url("https://cloud.githubusercontent.com/assets/14104075/21958118/d5dff9ee-da62-11e6-8f5c-92613f3547ed.png");
   background-repeat: no-repeat;
   background-position: center 0%; 
   background-size: cover;
 }
-
 
 .card {
   background-color: #F5F5F5;
