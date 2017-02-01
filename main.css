@@ -240,8 +240,8 @@ header li {
 
 /*------------------------------------------Portfolio---*/
 
-#gofire {
-  background-image: url("https://cloud.githubusercontent.com/assets/14104075/22386704/93c4ac20-e495-11e6-814a-abb1bd0e0862.png");
+#intrn {
+  background-image: url("https://cloud.githubusercontent.com/assets/14104075/19628122/ac01d6f0-9913-11e6-99ac-80873f3a7660.png");
   background-repeat: no-repeat;
   background-position: center 0%; 
   background-size: cover;
@@ -342,9 +342,9 @@ header li {
   -ms-transform: scale(0.99,0.99); /* IE 9 */
   -webkit-transform: scale(0.99,0.99); /* Safari */
   transform: scale(0.99,0.99); /* Standard syntax */
-  opacity: 0.35;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
-
 
 /*------------------------------------------Footer---*/
 footer {
