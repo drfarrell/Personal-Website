@@ -3,16 +3,6 @@ html, body {
     overflow-x: hidden;
 }
 
-body {
-background: rgba(255,255,255,1);
-background: -moz-linear-gradient(110deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(230,230,230,1) 47%, rgba(255,255,255,1) 61%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
-background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(255,255,255,1)), color-stop(47%, rgba(238,238,238,1)), color-stop(61%, rgba(255,255,255,1)), color-stop(69%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
-background: -webkit-linear-gradient(110deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(238,238,238,1) 47%, rgba(255,255,255,1) 61%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
-background: -o-linear-gradient(110deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(238,238,238,1) 47%, rgba(255,255,255,1) 61%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
-background: -ms-linear-gradient(110deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(238,238,238,1) 47%, rgba(255,255,255,1) 61%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
-background: linear-gradient(110deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(244,244,244,1) 47%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 55%, rgba(255,255,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
-}
 
 * {
     margin: 0;
@@ -21,9 +11,32 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 /*------------------------------------------Fonts---*/
 
+
+/** Bold */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 700;
+  src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
+}
+
+/** Heavy */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 800;
+  src: url("https://sf.abarba.me/SF-UI-Display-Heavy.otf");
+}
+
+/** Regular */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 400;
+  src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
+}
+
 body {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: "SF Display", -apple-system, BlinkMacSystemFont, Arial, Helvetica, sans-serif;
   color: #515357;
+  rgba(255,255,255,1);
 }
 
 h1 {
@@ -38,25 +51,21 @@ h2 {
   font-weight: 800;
   line-height: 120%;
   font-size: 11em;
-  color: white;
-  text-shadow: 0px 0px 100px rgba(0,0,0,0.15);
+  color: #F5F5F5;
 }
 
 h3 {
-  text-align: center;
-  font-weight: 500;
-  font-size: 3em;
-  padding-top: 30px;
+  font-weight: 700;
+  font-size: 2.5em;
 }
 
 h4 {
-  text-align: center;
-  font-size: 1.15em;
+  font-size: 1.4em;
 }
 
 p {
   color: #515357;
-  font-weight: 500 !important;
+  font-weight: 400;
   margin: 30px;
   font-size: 1.24em;
 }
@@ -100,10 +109,10 @@ p a:hover {
 /*------------------------------------------Navbar---*/
 
 .navbar-default .navbar-nav > li > a {
-  color: white; 
+  color: white;
 }
 .navbar-default .navbar-nav > li > a:hover {
-  color: #FFB400; 
+  color: #FFB400;
 }
 
 .navbar {
@@ -148,6 +157,7 @@ header li {
   padding: 50px;
   background: none;
   /*height: 140px;*/
+  margin-top: 30px;
   margin-bottom: -150px;
 }
 
@@ -231,8 +241,9 @@ header li {
 }
 
 
+
 .work {
-  margin-top: 0px;
+  margin-top: 50px;
 }
 
 
@@ -240,67 +251,56 @@ header li {
 
 /*------------------------------------------Portfolio---*/
 
-#intrn {
-  background-image: url("https://cloud.githubusercontent.com/assets/14104075/19628122/ac01d6f0-9913-11e6-99ac-80873f3a7660.png");
+#wanderlift {
+  background-image: url(Images/Wanderlift.png);
   background-repeat: no-repeat;
-  background-position: center 0%; 
-  background-size: cover;
+  background-position: 100% 100% !important;
+  background-size: 340px;
+  background-color: #00B1FF;
+  color: white;
 }
 
 #gofire {
-  background-image: url("https://cloud.githubusercontent.com/assets/14104075/19628117/a427185a-9913-11e6-9fd5-af5a1551f9fa.png");
+  background-image: url(Images/Gofire.png);
   background-repeat: no-repeat;
-  background-position: center 0%; 
-  background-size: cover;
+  background-position: 100% 120% !important;
+  background-size: 330px;
+  background-color: #8A00C0;
+  color: white;
 }
 
 #flowhub {
-  background-image: url("https://cloud.githubusercontent.com/assets/14104075/20731391/78c66818-b647-11e6-994c-9491f9f78213.png");
+  background-image: url(Images/Flowhub.png);
   background-repeat: no-repeat;
-  background-position: center 0%; 
-  background-size: cover;
-}
-
-#novelytics {
-  background-image: url("https://cloud.githubusercontent.com/assets/14104075/19628116/a424e2e2-9913-11e6-9340-a566afb64082.png");
-  background-repeat: no-repeat;
-  background-position: center 0%; 
-  background-size: cover;
+  background-position: 50% 175%;
+  background-size: 750px;
+  background-color: #FFEA13;
 }
 
 #ux {
-  background-image: url("https://cloud.githubusercontent.com/assets/14104075/21958055/c43261ce-da61-11e6-9c1e-02b0ed4452af.png");
+  background-image: url(Images/CMP.png);
   background-repeat: no-repeat;
-  background-position: center 0%; 
-  background-size: cover;
+  background-position: 50% 100%;
+  background-size: 500px;
+  background-color: #FFCAC6;
 }
 
-#airbnb {
-  background-image: url("https://cloud.githubusercontent.com/assets/14104075/19628112/a413f8ba-9913-11e6-9fd9-7d5c93d7562d.png");
+#intrn {
+  background-image: url(Images/Intrn.png);
   background-repeat: no-repeat;
-  background-position: center 0%; 
-  background-size: cover;
+  background-position: 50% 114%;
+  background-size: 500px;
+  background-color: #00E7AD;
+  color: white;
 }
 
-#wthout {
-  background-image: url("https://cloud.githubusercontent.com/assets/14104075/19628119/a4306612-9913-11e6-9894-8614329b586b.png");
+#smokear {
+  background-image: url(Images/Smoke_Ar.png);
   background-repeat: no-repeat;
-  background-position: center 0%; 
-  background-size: cover;
-}
-
-#smOS {
-  background-image: url("https://cloud.githubusercontent.com/assets/14104075/19628118/a4280dfa-9913-11e6-91c0-54e10096a320.png");
-  background-repeat: no-repeat;
-  background-position: center 0%; 
-  background-size: cover;
-}
-
-#wanderlift {
-  background-image: url("https://cloud.githubusercontent.com/assets/14104075/21958118/d5dff9ee-da62-11e6-8f5c-92613f3547ed.png");
-  background-repeat: no-repeat;
-  background-position: center 0%; 
-  background-size: cover;
+  background-position: 50% 400%;
+  background-size: 750px;
+  background-color: #2B2B2B;
+  color: white;
 }
 
 .card {
@@ -308,6 +308,7 @@ header li {
   height: 500px;
   margin-left: -5px;
   margin-right: -5px;
+  margin-bottom: 20px;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
@@ -346,9 +347,37 @@ header li {
   filter: grayscale(100%);
 }
 
+.label {
+  margin-top: 10px;
+}
+
+#wanderlift .label {
+  position: absolute;
+  top: 370px;
+  left: 35px;
+  text-align: left !important;
+}
+
+#gofire .label {
+  position: absolute;
+  top: 370px;
+  left: 35px;
+  text-align: left !important;
+}
+
+#flowhub .label {
+  color: #3B3B3B !important;
+}
+
+#ux .label {
+  color: #3B3B3B !important;
+}
+
+
+
 /*------------------------------------------Footer---*/
 footer {
-  background-color: none; 
+  background-color: none;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -357,53 +386,107 @@ footer {
   float: right;
 }
 
+@media (min-width: 2000px){
+
+}
+
+@media (max-width: 1199px){
+  #wanderlift {
+    background-position: 180% 100% !important;
+    background-size: 340px;
+  }
+
+  #gofire {
+    background-position: 140% 135% !important;
+    background-size: 330px;
+  }
+}
+
 @media(max-width: 1000px){
-  
-  
+
   .jumbotron {
     padding: 50px;
     background: none;
     height: 550px;
   }
 
-  
+
   h1 {
     font-size: 5em !important;
     line-height: 100px;
   }
-  
+
   h2 {
     line-height: 120%;
     font-size: 15.0vw !important;
     font-size: 8.5em;
   }
-  
+
   #daniel {
-    top: 105px;
+    top: 285px;
   }
 
   .backtext {
     top: -200px;
   }
-  
+
   .first {
   left: -0%;
   }
 
-.second {
-  left: 0%;
+  .second {
+    left: 0%;
+  }
+
+  .third {
+    z-index: 1;
+    right: 0%;
+  }
+
+  .overview {
+    margin-top: 200px;
+    padding-top: 50px;
+  }
+
 }
 
-.third {
-  z-index: 1;
-  right: 0%;
-}
-  
-  
+@media(max-width: 991px){
+
+
+  #wanderlift {
+    background-position: 80% 100% !important;
+    background-size: 340px;
+  }
+
+  #gofire {
+    background-position: 80% 135% !important;
+    background-size: 330px;
+  }
+
+  #flowhub {
+    background-position: 49% 100%;
+    background-size: 600px;
+  }
+
+  #ux {
+    background-position: 49% 100%;
+    background-size: 350px;
+  }
+
+  #intrn {
+    background-position: 49% 107%;
+    background-size: 350px;
+  }
+
+  #smokear {
+    background-position: 49% 100%;
+    background-size: 600px;
+  }
+
 }
 
 @media(max-width: 921px){
-  
+
   .first {
     left: 0%;
     text-align: center;
@@ -424,90 +507,136 @@ footer {
     z-index: 1;
     right: -4%;
   }
-  
+
+  .backtext {
+    top: -150px;
+    position: relative;
+  }
+
+
 }
-
-
 
 
 @media(max-width: 825px){
 
   .backtext {
-    top: -280px;
+    top: -100px;
     position: relative;
   }
-  
+
   .descriptor {
-  padding-top: 2%;
-  padding-bottom: 0%;
+    padding-top: 2%;
+    padding-bottom: 0%;
   }
-  
+
+  #daniel {
+    top: 285px;
+  }
+
+}
+
+@media(max-width: 768px){
+
+  #ux {
+    background-position: 48% 100%;
+    background-size: 600px;
+  }
+
+  #intrn {
+    background-position: 48% 107%;
+    background-size: 600px;
+  }
+
+  .backtext {
+    top: -250px;
+  }
+
+  #daniel {
+    top: 145px;
+  }
+
+  .overview {
+    margin-top: 100px;
+    padding-top: 0px;
+  }
 }
 
 
 @media(max-width: 730px){
 
-  
   h1 {
     font-size: 3.8em;
   }
-  
+
   h2 {
     line-height: 120%;
     font-size: 15.0vw !important;
     font-size: 8.5em;
   }
-  
+
   .navbar {
     padding-right: 0%;
     padding-left: 5%;
   }
-  
+
   .second {
     position: relative;
     left: -40px;
     text-align: center;
     margin: 0 auto !important;
   }
-
-  
-
-
 }
 
 
 
 @media(max-width: 645px){
- 
+
   .jumbotron {
     height: -15%;
   }
-  
+
   h1 {
     font-size: 4em !important;
   }
 
   h2 {
     line-height: 120%;
-  
+
   }
-  
+
   .descriptor {
     padding-left: 0%;
     padding-right: 0%;
     padding-top: 10%;
     padding-bottom: 0%;
   }
-  
+
   .backtext {
     padding-top: 20%;
   }
+
+  .first {
+    left: -10%;
+    text-align: left;
+  }
+
+  .second {
+    position: relative;
+    text-align: center;
+    margin: 0 auto !important;
+  }
+
+  .third {
+    text-align: right;
+    right: -10%;
+  }
+
 }
 
 
 
 @media(max-width: 600px){
-    
+
   .descriptor {
     padding-top: 0%;
     padding-bottom: 0%;
@@ -516,28 +645,127 @@ footer {
   .backtext {
     padding-top: 15%;
   }
+
+  #wanderlift {
+    background-position: 130% 100% !important;
+    background-size: 340px;
+  }
+
+  #gofire {
+    background-position: 130% 135% !important;
+    background-size: 330px;
+  }
+
+  #flowhub {
+    background-position: 46% 100%;
+    background-size: 500px;
+  }
+
+  #ux {
+    background-position: 46% 100%;
+    background-size: 500px;
+  }
+
+  #intrn {
+    background-position: 46% 107%;
+    background-size: 500px;
+  }
+
+  #smokear {
+    background-position: 46% 100%;
+    background-size: 500px;
+  }
+
+  #wanderlift .label {
+    top: 380px;
+    left: 20px;
+  }
+
+  #gofire .label {
+    top: 380px;
+    left: 20px;
+  }
 }
 
+@media(max-width: 500px){
+
+  .first {
+    left: -10%;
+    text-align: left;
+  }
+
+  .second {
+    top: 20px;
+  }
+
+  .third {
+    text-align: right;
+    right: -10%;
+    top: 20px;
+  }
+
+  #wanderlift {
+    background-position: 160% 100% !important;
+    background-size: 300px;
+  }
+
+  #gofire {
+    background-position: 160% 125% !important;
+    background-size: 290px;
+  }
+
+  #wanderlift .label {
+    top: 385px;
+    left: 15px;
+  }
+
+  #gofire .label {
+    top: 385px;
+    left: 15px;
+  }
+}
 
 @media(max-width: 420px){
 
-
-  
   #daniel {
-    top: 70px;
+    top: 100px;
   }
-  
- 
-  
+
   .backtext {
     padding-top: 25%;
   }
-  
-  .overview {
-    margin: -30px;
-    padding-top: 0px;
+
+
+  #wanderlift {
+    background-position: 200% 100% !important;
+    background-size: 300px;
   }
-  
+
+  #gofire {
+    background-position: 200% 125% !important;
+    background-size: 290px;
+  }
+
+  #flowhub {
+    background-position: 46% 100%;
+    background-size: 350px;
+  }
+
+  #ux {
+    background-position: 46% 100%;
+    background-size: 350px;
+  }
+
+  #intrn {
+    background-position: 46% 107%;
+    background-size: 350px;
+  }
+
+  #smokear {
+    background-position: 46% 100%;
+    background-size: 350px;
+  }
+
 }
 
 @media(max-width: 390px){
@@ -548,7 +776,7 @@ footer {
     margin-left: -20%;
     margin-right: -20%;
   }
-  
+
   h2 {
     line-height: 140%;
     font-size: 25.0vw !important;
@@ -557,16 +785,51 @@ footer {
     margin-left: 4%;
     width: 150%;
   }
-  
+
   .backtext {
     top: -140px;
-    left: -50px;
+    left: -80px;
   }
-  
+
+  #daniel {
+    top: 280px;
+  }
+
+  .second {
+    top: 10px;
+    left: 10px;
+  }
+
+  .third {
+    text-align: right;
+    right: -40%;
+    top: 10px;
+  }
+
   .overview {
     margin-left: -25px;
     margin-right: -25px;
-    margin-top: -180px;
+    margin-top: 60px;
   }
-  
+
+  #wanderlift {
+    background-position: 48% 150% !important;
+    background-size: 300px;
+  }
+
+  #gofire {
+    background-position: 48% 165% !important;
+    background-size: 290px;
+  }
+
+  #wanderlift .label {
+    position: inherit;
+    text-align: center !important;
+  }
+
+  #gofire .label {
+    position: inherit;
+    text-align: center !important;
+  }
+
 }

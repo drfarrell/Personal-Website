@@ -5,7 +5,7 @@
 <script src="https://code.jquery.com/jquery.min.js"></script>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:500,400,800|PT+Serif' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>Daniel R Farrell</title>
@@ -20,9 +20,19 @@
   ga('create', 'UA-75420258-1', 'auto');
   ga('send', 'pageview');
 </script>
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:776497,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
 </head>
 <body>
-  <header>    
+  <header>
   <nav class="navbar navbar-default" role="navigation">
     <div class="navbar-header">
           <ul class="nav navbar-nav navbar-left pull-left">
@@ -32,7 +42,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar" id="gone"></span>
         <span class="icon-bar"></span>
-      </button>    
+      </button>
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
@@ -47,7 +57,7 @@
     <div class="descriptor">
       <div class="container intro">
         <h1 id="hi">Hi there</h1>
-        <h1 id="daniel" >I'm Daniel</h1>
+        <h1 id="daniel">I'm Daniel</h1>
       </div>
       <div class="container back">
         <div class="transform3d">
@@ -70,7 +80,7 @@
     <div class="row">
       <a name="anchor" id="anchor"></a>
       <div class="col-md-6">
-        <p>I’m a product designer based in Denver, CO and I mainly design web and mobile, but I have experience in print, and hardware design. I’ve had the opportunity to work with businesses across the spectrum of <a href="https://getbellhops.com" target="_blank">$100 million startups</a> and large corporations.</p>
+        <p>I’m a product designer based in Denver, CO and I mainly design web and mobile, but I have experience in print, and hardware design. I’ve had the opportunity to work with businesses across the spectrum of $100 million startups and large corporations. Please note that I'm currently updating some visual styles on this site (2/10/18).</p>
       </div>
       <div class="col-md-6">
         <p>In my freetime I build <a href="https://wanderlift.com" target="_blank">Wanderlift</a> and <a href="https://smokear.com">Smoke AR</a>, <a href="https://twitter.com/D_R_Farrell" target="_blank">rant about typography</a>, <a href="https://soundcloud.com/dfaro" target="_blank">produce music</a>, religiously attend startup events, host startup club meetings, and study Mechanical Engineering at the University of Denver. Please have a look at some of my work below, or <a href="https://dribbble.com/D_R_Farrell" target="_blank">visit my Dribbble.</a></p>
@@ -80,32 +90,41 @@
     <div class="work">
     <div class="container">
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-12 col-md-6">
           <a href="https://drfarrell.github.io/Wanderlift/">
             <div class="card" id="wanderlift">
-              <h3>Wanderlift</h3>
-              <h4>Brand, Website, Product, Marketing</h4>
+              <div class="label">
+                <h3>Wanderlift</h3>
+                <h4>Brand, Website, Product</h4>
+              </div>
             </div>
           </a>
         </div>
-        <div class="col-sm-4">
-          <a href="https://drfarrell.github.io/Flowhub/">
-            <div class="card" id="flowhub">
-              <h3>Flowhub</h3>
-              <h4>Accessibility, iOS, Brand, Product</h4>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-4">
-          <a href="https://drfarrell.github.io/GoFire/">
+        <div class="col-sm-12 col-md-6">
+          <a href="https://drfarrell.github.io/Gofire/">
             <div class="card" id="gofire">
-              <h3>GoFire</h3>
-              <h4>Logo, Brand, iOS</h4>
+              <div class="label">
+                <h3>GoFire</h3>
+                <h4>Logo, Brand, iOS</h4>
+              </div>
             </div>
           </a>
         </div>
       </div>
-      <!-- <div class="row">
+      <div class="row">
+        <div class="col-sm-12">
+          <a href="https://drfarrell.github.io/Flowhub/">
+            <div class="card" id="flowhub">
+              <div class="label">
+                <h3>Flowhub</h3>
+                <h4>Accessibility, iOS, Brand, Product</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- If you want to see how far I've come, have a look at some of these old cases:
+      <div class="row>
         <div class="col-sm-4">
           <a href="http://drfarrell.github.io/Airbnb/">
             <div class="card" id="airbnb">
@@ -133,25 +152,35 @@
       </div>
       -->
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-6">
           <a href="http://drfarrell.github.io/CardMakerPro/">
             <div class="card" id="ux">
-              <h3>UX Challenge</h3>
-              <h4>User Research and Iterations</h4>
+              <div class="label">
+                <h3>UX Challenge</h3>
+                <h4>User Research and Iterations</h4>
+              </div>
             </div>
           </a>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-6">
             <div class="card nope" id="intrn">
-              <h3>intrn.co</h3>
-              <h4>En Route</h4>
+              <div class="label">
+                <h3>intrn.co</h3>
+                <h4>En Route</h4>
+              </div>
             </div>
         </div>
-        <div class="col-sm-4">
-          <div class="card nope" id="novelytics">
-            <h3>Novelytics</h3>
-            <h4>Patience is a Virture</h4>
-          </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <a href="https://smokear.com">
+            <div class="card" id="smokear">
+              <div class="label">
+                <h3>SmokeAR</h3>
+                <h4>Brand, Website, 3D Rendering</h4>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -167,4 +196,3 @@
     </footer>
 </body>
 </html>
-

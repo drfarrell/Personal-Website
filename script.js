@@ -14,7 +14,7 @@ window.addEventListener('mousemove', function(e){
 	var title			= document.querySelector('.title');
 	var titleDist   = title.getAttribute('data-distance');
 	title.style.transform = 'translate(' + translateX*titleDist + 'px,' + translateY*titleDist + 'px) rotateX(' + rotateX/titleDist + 'deg) rotateY(' + rotateY/titleDist + 'deg)';
-	title.style.textShadow = '' + (translateX*2)+ 'px ' + (translateY*2) + 'px' + ' 100px rgba(0,0,0,0.2)';	
+	//title.style.textShadow = '' + (translateX*2)+ 'px ' + (translateY*2) + 'px' + ' 100px rgba(0,0,0,0.2)';	
 }, false);
 
 
