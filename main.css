@@ -1,166 +1,132 @@
-html {
- font-family: "open-sans",sans-serif;
- color: #444444;
-}
-
 body {
-  background: #FFFFFF ;
+  font-family: sans-serif; 
+  background: #f9f8f1;
+  font-size: 16px;
+  text-transform: lowercase;
+  color: black;
 }
 
-/* Fonts */
+
 h1 {
-  font-size: 1.8em ;
-  text-align: center;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-top: 60px;
+  font-weight: 400;
 }
 
 h2 {
-  font-weight: 200;
-  font-size: 1.2em;
-  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 500;
 }
-
 
 h3 {
-  font-weight: 800;
-  margin-bottom: 8px;
-  font-size: 1.7em;
-  letter-spacing: 0.8px;
-  font-family: "acta-display", sans-serif;
-  position: relative;
-  text-transform: uppercase;
-}
-
-h4 {
-  font-size: 4.0em;
-  font-weight: 100;
-  display:inline;
-  opacity: 0.1;
-}
-
-img {
-  position: relative;
-  width: 100%;
-  padding-top: 30px;
+  font-size: 16px;
+  text-transform: lowercase;
 
 }
 
 p {
-  font-size: 0.84em;
-  font-weight: 500;
-  padding-top: 20px;
-  padding-bottom: 40px;
 }
 
-.subtitle {
-   position: absolute;
-   top: -15px;
-   left: -20%;
-   bottom: 0;
-   right: 0;
-   z-index: -1;
-   /*overflow: hidden;*/
+ul {
+  list-style-type: square;
+  position: relative;
+  left: -22px;
 }
 
 a {
-  color: #e67e22;
   opacity: 1;
-  text-decoration: none;
-  font-weight: 600;
-
+  transition: 0.2s ease-in-out;
 }
 
 a:hover {
-  opacity: 0.5;
+  color: lightgrey;
+  transition: 0.1s ease-in-out;
 }
 
-#background {
+
+.container {
+  margin: 30px;
+}
+
+.content {
   position: relative;
-  opacity: 0.5;
+  top: 200px;
+  margin: 20px;
 }
 
-header p {
-  text-transform: uppercase;
-  font-size: 0.8em;
+
+.point {
+  width: 10px; 
+  height: 10px;
+  background-color: black; 
 }
 
-header {
+.begin {
+  border-radius: 10px;
 }
 
-.table {
-  display: table;
-  margin: 0 auto;
-  border-collapse: separate;
-  border-spacing: 50px 10px;
+.wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0px auto;
 }
 
-.header {
-  text-align: justify;
-}
-
-header:after {
-  display: inline-block;
+.line {
+  content: '';
+  flex: 1;  
+  height: 1px;
+  background-color: #000;
+  display: block;
   width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: slideIn 2s ease-in-out infinite;
+  animation-delay: 2s;
+  z-index: 10;
 }
 
-.hr {
-  height: 1.0px;
-  background-color: #e67e22;
-  opacity: 0.5;
+.line2 {
+  content: '';
+  flex: 1;  
+  height: 1px;
+  background-color: #CCC;
+  display: block;
+  transform: scaleX(2);
+  transform-origin: right;
+  z-index: 1;
 }
 
-.subtitle {
-  text-transform: uppercase;
-  color: #444444;
-  font-size: 0.9em;
-  letter-spacing: 3px;
+@keyframes slideIn {
+  0%   {transform:scaleX(0);}
+  50%  {transform:scaleX(0.5);}
+  80%  {transform:scaleX(0); transform-origin: right;}
+  100% {}  
 }
 
 
-
-li {
-  list-style-type: none;
-  display: inline-block;
-  margin: 0 10px 0px 10px;
-  font-weight: 600;
-  font-size: 0.8em;
-  text-transform: uppercase;
-  -webkit-transition: color 0.5s
-}
-
-li:hover{
-  color: #e67e22;
-   -webkit-transition: color 0.2s;
-}
-
-.navbar-nav{
-        float:none;
-        margin: 0 auto;
-        display: inline;
-}
-
-.Main-container {
-  padding: 0% 20% 0% 20%;
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.2em;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container { margin: 30px 30px 30px 30px;
   }
+  
+} 
 
-  .Main-container {
-    padding: 0% 0% 0% 0%;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container { margin: 50px 80px 30px 80px;
   }
+    
+  
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container { margin: {50px 100px 30px 100px;
+  }  
+  
+} 
+
+
+
+footer {
+  opacity: 20%;
 }
-/*@media (min-width: 768px){
-    .navbar-nav{
-        float:none;
-        margin: 0 auto;
-        display: table;
-        table-layout: fixed;
-    }
-}
-*/
